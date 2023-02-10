@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Gallery } from 'react-grid-gallery';
+import styles from '../styles/Home.module.css';
 import validPageNumbers from '../public/ct_id_valid_page_numbers.json';
 
 export const URLListBuilder = (root_url: string, ct_id: string, pages: string[]) => {
@@ -83,13 +84,15 @@ export default function ListContracts() {
     },
   ];
   return (
-    <>
-      <h1>List of Contracts</h1>
+    <div className={styles.container} style={{backgroundColor: 'white', color: 'black', padding: '3em'}}>
       <h2>
-        <Link href="/">Back to home</Link>
+        <Link href="/" >Back to home</Link>
       </h2>
+      <div className={styles.title} style={{paddingBottom: '0.5em'}}>
+        List of Contracts
+      </div>
 
       <Gallery images={gallery_test}></Gallery>
-    </>
+    </div>
   );
 }

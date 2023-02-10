@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{backgroundColor: 'white', color: 'black', paddingTop: '3em'}}>
       <div className={styles.title}>Multimodal Contract Segmentation</div>
       <Head>
         <title>CUAD Contract Segmentation</title>
