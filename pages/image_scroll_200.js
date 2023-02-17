@@ -2,13 +2,12 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Footer from '../components/Footer';
-import Herosection from './herosection';
-import HerosectionNew from './herosectionNew';
+import Herosection from '../components/herosection';
+import HerosectionNew from '../components/herosectionNew';
 import validPageNumbers from '../public/ct_id_valid_page_numbers.json';
 import { URLListBuilder } from './contracts_list';
 import { s3_root_dir } from './contracts_list';
 import { s3_root_dir_unlabeled } from './contracts_list';
-
 
 export default function Home() {
   let img_list = URLListBuilder(s3_root_dir, 'ct_200', validPageNumbers['ct_200']);

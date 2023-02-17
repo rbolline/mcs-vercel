@@ -1,8 +1,8 @@
 import React from "react";
-import Slideshow from "../components/Slideshow";
-import SlideshowSwap from "../components/SlideshowSwap";
+import SlideshowSwap from "./SlideshowSwap";
 
-function HerosectionNew({unlabeledImages, labeledImages}) {
+function HerosectionNew(props) {
+
 	// let unlabeledImagesEx = [
 	// 	"https://upload.wikimedia.org/wikipedia/commons/b/bd/Color_icon_blue.svg",
 	// 	"https://upload.wikimedia.org/wikipedia/commons/8/8a/White_blue_triangle.svg",
@@ -13,12 +13,13 @@ function HerosectionNew({unlabeledImages, labeledImages}) {
 	// 	"",
 	// 	"https://upload.wikimedia.org/wikipedia/commons/0/05/Red_circle.svg"
 	// ];
+
 	return (
 		<div>
 
 			<SlideshowSwap 
-			unlabeledImages={unlabeledImages} 
-			labeledImages={labeledImages} 
+				unlabeledImages={props.unlabeledImages} 
+				labeledImages={props.labeledImages} 
 			/>
 		</div>
 	);
