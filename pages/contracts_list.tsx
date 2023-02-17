@@ -15,6 +15,9 @@ export const URLListBuilder = (root_url: string, ct_id: string, pages: string[])
 export const s3_root_dir =
   'https://multimodal-contract-segmentation-contracts-bucket.s3.amazonaws.com/cuad_imgs_labeled/';
 
+export const s3_root_dir_unlabeled = 
+  'https://multimodal-contract-segmentation-contracts-bucket.s3.amazonaws.com/cuad_images_unlabeled/';
+
 export default function ListContracts() {
   let labelled_img_urls: Map<string, Array<string>> = new Map<string, Array<string>>();
   const ct_id_list = ['ct_200', 'ct_308', 'ct_308', 'ct_353', 'ct_345', 'ct_327', 'ct_506'];
