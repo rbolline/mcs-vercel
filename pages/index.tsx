@@ -31,12 +31,12 @@ const Home: NextPage = () => {
         <div className={styles.grid}>
           <Link href="/contracts_list">
             <div className={styles.card} style={{ cursor: 'pointer' }}>
-              <h2>See all labeled contracts &rarr;</h2>
+              <h2>Contracts &rarr;</h2>
               <p>We labeled all contracts with tables of contents</p>
             </div>
           </Link>
 
-          <Link href="/image_test">
+          {/* <Link href="/image_test">
             <div className={styles.card} style={{ cursor: 'pointer' }}>
               <h2>What we are trying to accomplish &rarr;</h2>
               <p>Advancing the state of the art in legal NLP and vision</p>
@@ -48,10 +48,10 @@ const Home: NextPage = () => {
               <h2>About us &rarr;</h2>
               <p>Learn about our backgrounds as researchers</p>
             </div>
-          </Link>
+          </Link> */}
 
           <a href="https://github.com/mumose/contract_labeling_with_TOC" className={styles.card}>
-            <h2>Our Github &rarr;</h2>
+            <h2>Github &rarr;</h2>
             <p>Code to help you label and visualize section titles</p>
           </a>
         </div>

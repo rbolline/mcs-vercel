@@ -16,7 +16,6 @@ function HerosectionNew(props) {
 
 	return (
 		<div>
-
 			<SlideshowSwap 
 				unlabeledImages={props.unlabeledImages} 
 				labeledImages={props.labeledImages} 
