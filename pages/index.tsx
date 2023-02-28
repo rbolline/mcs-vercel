@@ -19,9 +19,9 @@ const Home: NextPage = () => {
           View contracts <Link href="/contracts_list">here!</Link>
         </h1>
 
-        <h1 className={styles.title}>
+        {/* <h1 className={styles.title}>
           See image scroller <Link href="/image_scroll_200">here!</Link>
-        </h1>
+        </h1> */}
 
         <p className={styles.description}>
           An NYU and Columbia Research Collaboration to advance the state of the art in open source
