@@ -51,7 +51,7 @@ const Home: NextPage = () => {
           </Link> */}
           <Link href="/image_scroll_200">
             <div className={styles.card} style={{ cursor: 'pointer' }}>
-              <h2>Example contract &rarr;</h2>
+              <h2>Example contract&rarr;</h2>
               <p>See a contract labeled using its table of contents</p>
             </div>
           </Link>
