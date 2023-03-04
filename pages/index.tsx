@@ -24,7 +24,8 @@ const Home: NextPage = () => {
         <p className={styles.description}>
           We believe the open source machine learning systems analyzing long form documents in the legal domain
           can be improved via a multimodal approach. We aim to improve such systems by incorporating hierarchical 
-          document information (such as the structure and layout of documents) in addition to the document's text. This approach aims to improve various downstream tasks that are difficult for 
+          document information--such as the structure and layout of documents--in addition to the document's text. 
+          This approach aims to improve various downstream tasks that are difficult for 
           current text-only systems due to the length and complexity of legal contracts.   
         </p>
 
@@ -51,7 +52,7 @@ const Home: NextPage = () => {
           </Link> */}
           <Link href="/image_scroll_200">
             <div className={styles.card} style={{ cursor: 'pointer' }}>
-              <h2>Example contract&rarr;</h2>
+              <h2>Example Contract &rarr;</h2>
               <p>See a contract labeled using its table of contents</p>
             </div>
           </Link>
